@@ -1,0 +1,35 @@
+[
+  {
+    "screenId": "9bcddc7e21fe40de921973d61826ba38",
+    "title": "Record Editor - Focus Pad",
+    "htmlFile": "9bcddc7e21fe40de921973d61826ba38.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzczNzE2MWYwZTFjNzRjMjBiNGMyZWMxMWU2NmY2YWJmEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxNzc2NzI1NzA3NTU4OTI3MjAwMg&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/focus-pad-7c9ccd93/stitch/9bcddc7e21fe40de921973d61826ba38.html",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "f8572337bedf40bca9233ab2d9447985",
+    "title": "Insights - Focus Pad",
+    "htmlFile": "f8572337bedf40bca9233ab2d9447985.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2YzZGY5ZDQxZTc5MzQ1MDQ5NGQ1OTRlN2ZjMjU4N2JjEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxNzc2NzI1NzA3NTU4OTI3MjAwMg&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/focus-pad-7c9ccd93/stitch/f8572337bedf40bca9233ab2d9447985.html",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "8de21698b06e417f950ab9075bb1abf4",
+    "title": "Record Operations - Focus Pad",
+    "htmlFile": "8de21698b06e417f950ab9075bb1abf4.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2QwZWM4ODgzZGI3YTQ4MmU5MzQ3YjRmNjZlZmRiYjEyEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxNzc2NzI1NzA3NTU4OTI3MjAwMg&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/focus-pad-7c9ccd93/stitch/8de21698b06e417f950ab9075bb1abf4.html",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  }
+]
