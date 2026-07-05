@@ -1,0 +1,337 @@
+[
+  {
+    "screenId": "9bcddc7e21fe40de921973d61826ba38",
+    "title": "Record Editor - Focus Pad",
+    "componentName": "RecordEditorFocusPad",
+    "file": "src/screens/RecordEditorFocusPad.tsx",
+    "buttons": 6,
+    "inputs": 2,
+    "links": 6,
+    "actions": [
+      {
+        "id": "new-record-1",
+        "kind": "button",
+        "label": "New Record",
+        "index": 0
+      },
+      {
+        "id": "back-2",
+        "kind": "button",
+        "label": "Back",
+        "index": 1
+      },
+      {
+        "id": "cancel-3",
+        "kind": "button",
+        "label": "Cancel",
+        "index": 2
+      },
+      {
+        "id": "save-4",
+        "kind": "button",
+        "label": "Save",
+        "index": 3
+      },
+      {
+        "id": "close-5",
+        "kind": "button",
+        "label": "close",
+        "index": 4
+      },
+      {
+        "id": "close-6",
+        "kind": "button",
+        "label": "close",
+        "index": 5
+      },
+      {
+        "id": "records-1",
+        "kind": "link",
+        "label": "Records",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "insights-2",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "archive-3",
+        "kind": "link",
+        "label": "Archive",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "documentation-4",
+        "kind": "link",
+        "label": "Documentation",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "support-5",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "privacy-6",
+        "kind": "link",
+        "label": "Privacy",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "f8572337bedf40bca9233ab2d9447985",
+    "title": "Insights - Focus Pad",
+    "componentName": "InsightsFocusPad",
+    "file": "src/screens/InsightsFocusPad.tsx",
+    "buttons": 6,
+    "inputs": 1,
+    "links": 7,
+    "actions": [
+      {
+        "id": "new-record-1",
+        "kind": "button",
+        "label": "New Record",
+        "index": 0
+      },
+      {
+        "id": "search-2",
+        "kind": "button",
+        "label": "Search",
+        "index": 1
+      },
+      {
+        "id": "settings-3",
+        "kind": "button",
+        "label": "Settings",
+        "index": 2
+      },
+      {
+        "id": "account-circle-4",
+        "kind": "button",
+        "label": "Account Circle",
+        "index": 3
+      },
+      {
+        "id": "filter-5",
+        "kind": "button",
+        "label": "Filter",
+        "index": 4
+      },
+      {
+        "id": "export-summary-6",
+        "kind": "button",
+        "label": "Export Summary",
+        "index": 5
+      },
+      {
+        "id": "records-1",
+        "kind": "link",
+        "label": "Records",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "insights-2",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "archive-3",
+        "kind": "link",
+        "label": "Archive",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "review-now-4",
+        "kind": "link",
+        "label": "Review now →",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "documentation-5",
+        "kind": "link",
+        "label": "Documentation",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "support-6",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "privacy-7",
+        "kind": "link",
+        "label": "Privacy",
+        "href": "#",
+        "index": 6
+      }
+    ]
+  },
+  {
+    "screenId": "8de21698b06e417f950ab9075bb1abf4",
+    "title": "Record Operations - Focus Pad",
+    "componentName": "RecordOperationsFocusPad",
+    "file": "src/screens/RecordOperationsFocusPad.tsx",
+    "buttons": 15,
+    "inputs": 1,
+    "links": 7,
+    "actions": [
+      {
+        "id": "new-record-1",
+        "kind": "button",
+        "label": "New Record",
+        "index": 0
+      },
+      {
+        "id": "settings-2",
+        "kind": "button",
+        "label": "Settings",
+        "index": 1
+      },
+      {
+        "id": "account-circle-3",
+        "kind": "button",
+        "label": "Account Circle",
+        "index": 2
+      },
+      {
+        "id": "filter-4",
+        "kind": "button",
+        "label": "Filter",
+        "index": 3
+      },
+      {
+        "id": "last-30-days-5",
+        "kind": "button",
+        "label": "Last 30 Days",
+        "index": 4
+      },
+      {
+        "id": "refresh-6",
+        "kind": "button",
+        "label": "Refresh",
+        "index": 5
+      },
+      {
+        "id": "edit-7",
+        "kind": "button",
+        "label": "Edit",
+        "index": 6
+      },
+      {
+        "id": "edit-8",
+        "kind": "button",
+        "label": "Edit",
+        "index": 7
+      },
+      {
+        "id": "edit-9",
+        "kind": "button",
+        "label": "Edit",
+        "index": 8
+      },
+      {
+        "id": "edit-10",
+        "kind": "button",
+        "label": "Edit",
+        "index": 9
+      },
+      {
+        "id": "edit-11",
+        "kind": "button",
+        "label": "Edit",
+        "index": 10
+      },
+      {
+        "id": "close-12",
+        "kind": "button",
+        "label": "Close",
+        "index": 11
+      },
+      {
+        "id": "assign-13",
+        "kind": "button",
+        "label": "Assign",
+        "index": 12
+      },
+      {
+        "id": "complete-14",
+        "kind": "button",
+        "label": "Complete",
+        "index": 13
+      },
+      {
+        "id": "retry-15",
+        "kind": "button",
+        "label": "Retry",
+        "index": 14
+      },
+      {
+        "id": "records-1",
+        "kind": "link",
+        "label": "Records",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "insights-2",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "archive-3",
+        "kind": "link",
+        "label": "Archive",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "operations-4",
+        "kind": "link",
+        "label": "Operations",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "insights-5",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "documentation-6",
+        "kind": "link",
+        "label": "Documentation",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "support-7",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 6
+      }
+    ]
+  }
+]
