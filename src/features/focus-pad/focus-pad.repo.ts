@@ -61,18 +61,32 @@ function sanitizeNote(value: unknown): FocusPadRecord | null {
   };
 }
 
-function getStorage(): Storage | null {
+// Cache the result of the localStorage capability probe so repeat load/save
+// calls do not pay the setItem/removeItem cost on every invocation. The
+// cache is keyed by the actual `localStorage` object reference so test
+// setups that swap in a memory-backed Storage see a fresh probe.
+let cachedStorageFor: Storage | null | undefined = undefined;
+let cachedStorageResult: Storage | null = null;
+
+function probeStorage(candidate: Storage): boolean {
   try {
-    if (typeof globalThis === 'undefined') return null;
-    const candidate = (globalThis as { localStorage?: Storage }).localStorage;
-    if (!candidate) return null;
     const probeKey = '__focus_pad_probe__';
     candidate.setItem(probeKey, '1');
     candidate.removeItem(probeKey);
-    return candidate;
+    return true;
   } catch {
-    return null;
+    return false;
   }
+}
+
+function getStorage(): Storage | null {
+  if (typeof globalThis === 'undefined') return null;
+  const candidate = (globalThis as { localStorage?: Storage }).localStorage ?? null;
+  if (cachedStorageFor === candidate) return cachedStorageResult;
+  const probed: Storage | null = candidate && probeStorage(candidate) ? candidate : null;
+  cachedStorageFor = candidate;
+  cachedStorageResult = probed;
+  return probed;
 }
 
 function loadFromStorage(): FocusPadRepoLoadResult {

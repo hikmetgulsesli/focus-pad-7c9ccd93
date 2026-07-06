@@ -176,7 +176,12 @@ export function FocusPadProvider({
   const [state, dispatch] = useReducer(reducer, EMPTY_STATE);
   const stateRef = useRef(state);
   stateRef.current = state;
+  // Track bootstrap completion separately from the first save so we can skip
+  // the persistence effect that fires when INIT transitions storageStatus
+  // from 'loading' -> 'ready' with the same notes we just loaded. Without
+  // this, every mount writes the freshly-hydrated notes back to localStorage.
   const bootstrappedRef = useRef(false);
+  const skipNextSaveRef = useRef(true);
 
   // Bootstrap: run once on mount, hydrate state from the persistence adapter.
   useEffect(() => {
@@ -209,6 +214,13 @@ export function FocusPadProvider({
   useEffect(() => {
     if (!bootstrappedRef.current) return;
     if (state.storageStatus === 'idle' || state.storageStatus === 'loading') {
+      return;
+    }
+    // Skip the first post-bootstrap save: INIT just wrote those exact notes
+    // back into state, so persisting them again is a redundant localStorage
+    // write. Subsequent saves (real user changes) fall through normally.
+    if (skipNextSaveRef.current) {
+      skipNextSaveRef.current = false;
       return;
     }
     const result = repo.save(state.notes);

@@ -42,6 +42,11 @@ function FocusPadShell() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     bridge.upsertNote(inputValue);
+    // React batches the SET_DRAFT_BODY + SAVE_DRAFT_NOTE dispatches so the
+    // draftBody effect below does not fire within the same render cycle.
+    // Clearing the controlled-input state directly guarantees the textarea
+    // resets as soon as the save commits.
+    setInputValue('');
   };
 
   const selected = notes.find((note) => note.id === selectedRecordId) ?? null;
